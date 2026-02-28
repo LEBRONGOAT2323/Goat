@@ -16,21 +16,30 @@ document.addEventListener("DOMContentLoaded", () => {
     sections.forEach(sec => observer.observe(sec));
 });
 
+
 const form = document.getElementById("contact-form");
+const button = document.getElementById("submit-btn");
 
 form.addEventListener("submit", async function(e) {
     e.preventDefault();
 
+    button.innerText = "Sending...";
+    button.disabled = true;
+
     const data = new FormData(form);
 
-    await fetch(form.action, {
-        method: form.method,
+    const response = await fetch(form.action, {
+        method: "POST",
         body: data,
         headers: {
             'Accept': 'application/json'
         }
     });
 
-    window.location.href = "https://lebrongoat2323.github.io/Goat/thank-you.html";
+    if (response.ok) {
+        window.location.href = "/Goat/thank-you.html";
+    } else {
+        button.innerText = "Error — Try Again";
+        button.disabled = false;
+    }
 });
-
