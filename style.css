@@ -330,3 +330,79 @@ form button:hover {
 .live-btn:hover {
     background: #0056b3;
 }
+
+/* PROJECTS GRID */
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  margin-top: 25px;
+}
+
+/* CARD */
+
+.project-card {
+  background: #111;
+  padding: 18px;
+  border-radius: 16px;
+  transition: 0.25s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  background: #181818;
+}
+
+/* IMAGE */
+
+.project-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* TEXT */
+
+.project-card h3 {
+  margin: 12px 0 5px;
+}
+
+.project-card p {
+  color: #aaa;
+  font-size: 0.95rem;
+}
+
+/* BUTTONS */
+
+.project-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.github-btn {
+  width: 30px;
+  height: 30px;
+  filter: invert(1);
+  border-radius: 8px;
+  display: flex;
+}
+
+.github-btn img {
+  width: 100%;
+}
+
+.github-btn img:hover {
+    transform: scale(1.2);
+}
+
+.live-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
