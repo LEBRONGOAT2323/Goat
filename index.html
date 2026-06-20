@@ -3,147 +3,185 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LebronGoat</title>
+    <meta name="description" content="LebronGoat — developer portfolio showcasing web projects, games, and experiments.">
+    <title>LebronGoat — Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#featured">Featured</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+    <header id="site-header">
+        <div class="nav-inner">
+            <a href="#home" class="brand">Lebron<span>Goat</span></a>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#featured">Featured</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
     </header>
 
     <section id="home" class="hero">
-        <h1>LebronGoat</h1>
-        <p>Thats's a Trash Idea</p>
+        <div class="hero-content">
+            <p class="hero-eyebrow">Developer &amp; Builder</p>
+            <h1>Hi, I'm <span class="gradient-text">LebronGoat</span></h1>
+            <p class="hero-tagline">I build browser games, glitchy experiments, and clean web experiences — one trash idea at a time.</p>
+            <div class="hero-actions">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+            </div>
+            <div class="hero-socials">
+                <a href="https://github.com/LEBRONGOAT2323" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+                <span class="dot">•</span>
+                <a href="https://discord.gg/wWgE8UFkEm" target="_blank" rel="noopener" aria-label="Discord">Discord</a>
+            </div>
+        </div>
+        <div class="hero-glow"></div>
     </section>
 
-   <section id="featured">
-  <h2>Featured Project</h2>
-
-  <div class="project-tile">
-
-    <div class="project-image">
-      <img src="assets/Flappy-Bird-screenshot.png" alt="Project Preview">
-    </div>
-
-    <div class="project-info">
-      <h3>Flappy Bird Clone</h3>
-      <p>
-        A smoother remake with better controls,
-        improved visuals, and subtle camera effects.
-      </p>
-
-      <div class="project-links">
-
-        <a href="https://github.com/LEBRONGOAT2323/flappy-bird" 
-           target="_blank" 
-           class="github-link">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg">
-        </a>
-
-        <a href="https://trueflappybird.vercel.app/" 
-           target="_blank" 
-           class="live-btn">
-          Live Demo
-        </a>
-
-      </div>
-    </div>
-
-  </div>
-</section>
-
- <section id="projects">
-  <h2 class="section-title">Projects</h2>
-
-  <div class="projects-grid">
-
-    <!-- Project Card -->
-    <div class="project-card">
-      <a href="https://trueflappybird.vercel.app" target="_blank" class="project-link">
-        <img src="assets/Flappy-Bird-screenshot.png" class="project-thumb">
-        <div class="project-info">
-          <h3>Flappy Bird</h3>
-          <p>A smooth browser remake of flappy bird with camera shake + improved controls.</p>
+    <section id="featured">
+        <div class="section-head">
+            <span class="section-kicker">Spotlight</span>
+            <h2>Featured Project</h2>
         </div>
-      </a>
 
-      <a href="https://github.com/LEBRONGOAT2323/Flappy-Bird" target="_blank" class="github-icon">
-       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg">
-      </a>
-    </div>
-
-    <!-- Project Card -->
-    <div class="project-card">
-      <a href="https://TrollPulse.vercel.app" target="_blank" class="project-link">
-        <img src="assets/TrollPulse.png" class="project-thumb">
-        <div class="project-info">
-          <h3>TrollPulse</h3>
-          <p>A fun glitchy style infinte loading screen, with incripted loading messages + funny messages.</p>
-        </div>
-      </a>
-
-      <a href="https://github.com/LEBRONGOAT2323/TrollPulse" target="_blank" class="github-icon">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg">
-      </a>
-    </div>
-
-  </div>
-</section>
-
-
-  </div>
-</section>
-  
-
-    <section id="blog">
-        <h2>Blog</h2>
-        <div class="cards">
-            <div class="card">
-                <h3>Nothing Here Yet...</h3>
-                <p></p>
-                <a href=""></a>
+        <div class="featured-card">
+            <div class="featured-image">
+                <img src="assets/Flappy-Bird-screenshot.png" alt="Flappy Bird Clone preview" loading="lazy">
             </div>
-            <div class="card">
-                <h3></h3>
-                <p>.</p>
-                <a href="#"></a>
+            <div class="featured-text">
+                <h3>Flappy Bird Clone</h3>
+                <p>A smoother remake with refined controls, improved visuals, and subtle camera effects that bring the classic to life in the browser.</p>
+                <div class="tag-row">
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">Canvas</span>
+                    <span class="tag">Game</span>
+                </div>
+                <div class="featured-actions">
+                    <a href="https://trueflappybird.vercel.app/" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Live Demo</a>
+                    <a href="https://github.com/LEBRONGOAT2323/flappy-bird" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">Source Code</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="section-head">
+            <span class="section-kicker">Work</span>
+            <h2>Projects</h2>
+        </div>
+
+        <div class="projects-grid">
+
+            <article class="project-card">
+                <a href="https://trueflappybird.vercel.app" target="_blank" rel="noopener" class="project-link">
+                    <div class="thumb-wrap">
+                        <img src="assets/Flappy-Bird-screenshot.png" class="project-thumb" alt="Flappy Bird" loading="lazy">
+                    </div>
+                    <div class="project-info">
+                        <h3>Flappy Bird</h3>
+                        <p>A smooth browser remake of Flappy Bird with camera shake and improved controls.</p>
+                        <div class="tag-row">
+                            <span class="tag">JS</span>
+                            <span class="tag">Game</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://github.com/LEBRONGOAT2323/Flappy-Bird" target="_blank" rel="noopener" class="github-icon" aria-label="View Flappy Bird on GitHub">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="">
+                </a>
+            </article>
+
+            <article class="project-card">
+                <a href="https://TrollPulse.vercel.app" target="_blank" rel="noopener" class="project-link">
+                    <div class="thumb-wrap">
+                        <img src="assets/TrollPulse.png" class="project-thumb" alt="TrollPulse" loading="lazy">
+                    </div>
+                    <div class="project-info">
+                        <h3>TrollPulse</h3>
+                        <p>A fun, glitchy infinite loading screen with encrypted loading messages and playful prompts.</p>
+                        <div class="tag-row">
+                            <span class="tag">JS</span>
+                            <span class="tag">Experiment</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://github.com/LEBRONGOAT2323/TrollPulse" target="_blank" rel="noopener" class="github-icon" aria-label="View TrollPulse on GitHub">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="">
+                </a>
+            </article>
+
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="section-head">
+            <span class="section-kicker">Who I Am</span>
+            <h2>About</h2>
+        </div>
+        <div class="about-wrap">
+            <p class="about-lead">
+                I'm a self-taught developer who loves turning weird ideas into working things you can click on.
+                Most of my projects start as experiments — a game, a glitch, a "what if" — and end up as polished
+                little corners of the web.
+            </p>
+            <div class="skills">
+                <span class="skill-chip">JavaScript</span>
+                <span class="skill-chip">HTML &amp; CSS</span>
+                <span class="skill-chip">Canvas</span>
+                <span class="skill-chip">Game Dev</span>
+                <span class="skill-chip">Vercel</span>
+                <span class="skill-chip">Git</span>
             </div>
         </div>
     </section>
 
     <section id="contact">
-        <h2>Contact</h2>
-        <ul class="socials">
-            <li><a href="https://discord.gg/wWgE8UFkEm">Discord</a></li>
-            <li><a href="https://github.com/LEBRONGOAT2323">GitHub</a></li>
-        </ul>
-    <form id="contact-form" action="https://formspree.io/f/xdalbkzq" method="POST">
-        <label for="name">Name</label>
-        <input type="text" name="name" id="name" required>
-
-        <label for="email">Email</label>
-        <input type="email" name="_replyto" id="email" required>
-
-        <label for="email">Subject</label>
-        <input type="text" name="subject" placeholder="Subject" required>
-
-        <label for="message">Message</label>
-        <textarea name="message" id="message" rows="5" required></textarea>
-
-        <button type="submit" id="submit-btn">Send Message</button>
-    </form>
+        <div class="section-head">
+            <span class="section-kicker">Say Hello</span>
+            <h2>Contact</h2>
+        </div>
+        <p class="contact-intro">Got a project, an idea, or just want to chat? Drop me a message.</p>
+        <form id="contact-form" action="https://formspree.io/f/xdalbkzq" method="POST">
+            <div class="field-row">
+                <div class="field">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Your name" required>
+                </div>
+                <div class="field">
+                    <label for="email">Email</label>
+                    <input type="email" name="_replyto" id="email" placeholder="you@example.com" required>
+                </div>
+            </div>
+            <div class="field">
+                <label for="subject">Subject</label>
+                <input type="text" name="subject" id="subject" placeholder="What's this about?" required>
+            </div>
+            <div class="field">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" rows="5" placeholder="Your message..." required></textarea>
+            </div>
+            <button type="submit" id="submit-btn" class="btn btn-primary">Send Message</button>
+        </form>
     </section>
 
     <footer>
-        <p>© 2026 LEBRONGOAT2323. All rights reserved.</p>
+        <div class="footer-inner">
+            <a href="#home" class="brand">Lebron<span>Goat</span></a>
+            <div class="footer-socials">
+                <a href="https://github.com/LEBRONGOAT2323" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://discord.gg/wWgE8UFkEm" target="_blank" rel="noopener">Discord</a>
+            </div>
+            <p class="copyright">© 2026 LEBRONGOAT2323. All rights reserved.</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
